@@ -1,0 +1,7 @@
+body { background: #f8f9fa; }
+.stat-card { text-align: center; padding: 1.25rem; }
+.stat-card .num { font-size: 2rem; font-weight: 700; }
+.word-card { max-width: 640px; margin: 0 auto; }
+.word-headword { font-size: 2.5rem; font-weight: 700; text-align: center; letter-spacing: .02em; }
+.word-phone { text-align: center; color: #6c757d; margin-top: .5rem; }
+.grade-buttons .btn { padding: .75rem; font-weight: 600; }

@@ -1,0 +1,23 @@
+# Normalise line endings so the repo is identical on Windows, macOS and Linux.
+# 统一换行符，保证在 Windows、macOS、Linux 上克隆出来的内容一致。
+* text=auto eol=lf
+
+# Vendored front-end libraries: leave them byte-for-byte as shipped.
+assets/** -text -diff linguist-vendored
+
+# Word lists are data, not source — keep them out of GitHub's language stats.
+data/*.csv linguist-data
+data/*.json linguist-data
+
+# Binary assets.
+*.png   binary
+*.jpg   binary
+*.gif   binary
+*.webp  binary
+*.ico   binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.eot   binary
+*.zip   binary
+*.gz    binary

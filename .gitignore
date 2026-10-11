@@ -1,0 +1,43 @@
+# ── Secrets — never commit / 密码配置，绝对不要提交 ──────────────────
+core/config.php
+core/config.*.php
+!core/config.example.php
+.env
+*.env
+
+# ── Word lists you import / 你导入的词表 ────────────────────────────
+# Keep your own lists out of the repository unless you are certain you are
+# entitled to redistribute them. The demo list is the only one tracked.
+# 除非确定有权重新分发，否则不要把自己的词表提交进仓库。只有示例词表是被跟踪的。
+data/*
+!data/demo-wordlist.csv
+
+# ── Database dumps / 数据库导出 ─────────────────────────────────────
+*.sql.gz
+*_install.sql
+*_export_*.sql
+*_backup_*.sql
+words.sql
+!database/schema.sql
+
+# ── Editor / OS cruft ──────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Language / tooling ─────────────────────────────────────────────
+__pycache__/
+*.pyc
+node_modules/
+vendor/
+composer.lock
+
+# ── Logs and scratch files / 日志与临时文件 ─────────────────────────
+*.log
+/tmp/
+debug_*.php
+test_*.php
